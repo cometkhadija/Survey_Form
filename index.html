@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Page Title -->
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <!-- Short Explanation -->
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <!-- Survey Form -->
+    <form id="survey-form">
+      <!-- Name Field -->
+      <div class="form-group">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <!-- Email Field -->
+      <div class="form-group">
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+
+      <div class="form-group">
+        <label id="number-label" for="number">Age (optional):</label>
+        <input type="number" id="number" name="age" placeholder="Enter your age" min="18" max="100">
+      </div>
+
+      <!-- Dropdown (Select) -->
+      <div class="form-group">
+        <label for="dropdown">Which option best describes you?</label>
+        <select id="dropdown" name="role">
+          <option value="student">Select an option</option>
+                    <option value="student">Challenges</option>
+                    <option value="employed">Projects</option>
+                    <option value="unemployed">Community</option>
+                    <option value="student">Open Source</option>
+                </select>
+      </div>
+
+      <!-- Radio Buttons -->
+      <div class="form-group">
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+        
+          
+<label for="def"> <input type="radio" id="def" name="coding" value="def" required checked>Definitely</label>
+
+<label for="may"> <input type="radio" id="may" name="coding" value="may" required>Maybe</label>
+
+<label for="sure"> <input type="radio" id="sure" name="coding" value="sure" required>Not sure</label>
+        
+        
+        
+        <label>Select the programming languages you know:</label>
+        
+          
+  <label for="javascript"><input type="checkbox" id="javascript" name="languages" value="javascript">Front-end Projects</label>
+       
+          <label for="javascript"><input type="checkbox" id="javascript" name="languages" value="javascript">Back-end Projects</label>
+        
+          <label for="javascript"><input type="checkbox" id="javascript" name="languages" value="javascript">Data Visualization</label>
+
+          <label for="javascript"><input type="checkbox" id="javascript" name="languages" value="javascript">Challenges</label>
+
+          <label for="javascript"><input type="checkbox" id="javascript" name="languages" value="javascript">Open Source Community</label>
+
+          <label for="javascript"><input type="checkbox" id="javascript" name="languages" value="javascript">Gitter help rooms</label>
+
+          <label for="javascript"><input type="checkbox" id="javascript" name="languages" value="javascript">Videos</label>
+
+          <label for="javascript"><input type="checkbox" id="javascript" name="languages" value="javascript">City Meetups</label>
+          <label for="javascript"><input type="checkbox" id="javascript" name="languages" value="javascript">Wiki</label>
+          <label for="javascript"><input type="checkbox" id="javascript" name="languages" value="javascript">Forum</label>
+          <label for="javascript"><input type="checkbox" id="javascript" name="languages" value="javascript">Additional Courses</label>
+        
+
+      <!-- Textarea -->
+      <div class="form-group">
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comment here..." rows="4"></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-group">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
